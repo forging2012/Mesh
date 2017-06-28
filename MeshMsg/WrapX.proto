@@ -1,0 +1,19 @@
+syntax ="proto3";
+package MeshMsg;
+
+import "WrapQueue.proto";
+
+message FnMSG{
+  bytes Value=1;
+  bool IsNil=2;
+  bool AnyError=3;
+  string errorMessge=4;        
+  map<string,double> metrics=5;  
+  uuid uuid=7;
+}
+
+message XMSG{
+  bytes Value=1;
+  bool IsNil=2;
+  uuid uuid=3;
+}

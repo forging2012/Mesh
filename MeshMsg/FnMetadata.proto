@@ -1,0 +1,14 @@
+syntax ="proto3";
+package MeshMsg;
+
+
+message XMetadata{
+    string FnID=1;
+}
+
+message FnMetadata{  
+  string peerID=1; 
+  string Metadata=2;
+  string QueueClientN=3;
+  string PubSubClient=4;
+}

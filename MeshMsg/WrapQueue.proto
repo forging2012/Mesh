@@ -1,0 +1,14 @@
+syntax ="proto3";
+package MeshMsg;
+
+message uuid{
+  string value=1;
+}
+
+
+message QueueMsg{
+  bytes Msg=1;
+  uuid uuid=2;
+  int64 retrys=3; 
+  string Exception=4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package protocol;
+
+ message FnX{
+     string msgR =1;
+ }
+
+message X{
+     string Msg=1;
+}
+
+
